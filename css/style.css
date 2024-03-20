@@ -1,0 +1,441 @@
+/*=====================FONTS START======================*/
+@font-face {
+	font-family: "gilroy";
+	font-weight: 700;
+	font-display: swap;
+	src: url("../fonts/gilroy-bold.woff2") format("woff2");
+  }
+  @font-face {
+	font-family: "gilroy";
+	font-weight: 400;
+	font-display: swap;
+	src: url("../fonts/gilroy-regular.woff2") format("woff2");
+  }
+  @font-face {
+	font-family: "gilroy";
+	font-weight: 600;
+	font-display: swap;
+	src: url("../fonts/gilroy-semibold.woff2") format("woff2");
+  }
+  /* cyrillic-ext */
+  @font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu72xKOzY.woff2)
+	  format("woff2");
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+	  U+FE2E-FE2F;
+  }
+  /* cyrillic */
+  @font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu5mxKOzY.woff2)
+	  format("woff2");
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  /* greek-ext */
+  @font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7mxKOzY.woff2)
+	  format("woff2");
+	unicode-range: U+1F00-1FFF;
+  }
+  /* greek */
+  @font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4WxKOzY.woff2)
+	  format("woff2");
+	unicode-range: U+0370-03FF;
+  }
+  /* vietnamese */
+  @font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7WxKOzY.woff2)
+	  format("woff2");
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+	  U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKOzY.woff2)
+	  format("woff2");
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+	  U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2)
+	  format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+	  U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+	  U+FEFF, U+FFFD;
+  }
+  /*=====================FONTS END======================*/
+
+/*=====================CSS RESET START======================*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  /* font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*=====================CSS RESET END======================*/
+/*=====================COMMON STYLES START======================*/
+* {
+  box-sizing: border-box;
+}
+a {
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
+}
+.container-wide {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+  }
+  .container-narrow {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+  }
+html {
+  scroll-behavior: smooth;
+}
+/* a:focus{
+	outline: 5px solid red;
+} */
+/*=====================COMMON STYLES END======================*/
+.header {
+  background-color: rgb(71, 71, 71);
+}
+.nav,
+.navbar {
+color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 23px;
+font-weight: 400;
+}
+.nav{
+	padding: 0;
+}
+.logo {
+  font-size: 40px;
+  font-weight: 600;
+  font-weight: bold;
+  color: rgb(255, 59, 92);
+  text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+/* .logo:hover {
+	text-decoration: underline;
+  } */
+.nav > li:nth-child(n + 2) {
+  margin-left: 10px;
+}
+.botton:hover{
+	  transform: translateY(5px);
+	  transition: transform .8s,
+}
+.nav a {
+  padding: 15px;
+  background-color: #696969;
+  border-radius: 15px;
+  transition: transform 0.5s;
+}
+.nav a:hover,
+.nav a:focus {
+  background-color: rgb(151, 151, 151);
+  color: rgb(255, 59, 92);
+}
+.nav li {
+  position: relative;
+}
+.nav li:hover > .dropmenu-wrap,
+.nav li:focus-within > .dropmenu-wrap {
+  visibility: visible;
+}
+.dropmenu-wrap {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-clip: content-box;
+  visibility: hidden;
+  padding-top: 20px;
+  white-space: nowrap;
+}
+.dropmenu a {
+  width: 100%;
+  border-radius: 0%;
+}
+.nav li:hover > .dropmenu-property,
+.nav li:focus-within > .dropmenu-property {
+  visibility: visible;
+}
+.dropmenu-property {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  visibility: hidden;
+}
+.play {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services-section {
+  display: flex;
+justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #cdcdcd;
+}
+.services-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 33%;
+  height: auto;
+  font-size: 20px;
+  font-weight: 400;
+}
+.services-box:hover {
+  color: white;
+  background-color: rgb(81, 81, 81);
+  transition: 0.4s background-color, 0.2s color;
+}
+.img-audio{
+	width: 25%;
+	height: auto;
+	object-fit: cover;
+  background-color: #696969;
+  border-radius: 15px;
+  border: 2px solid #999999;
+  margin-right: 10px;
+}
+.img-play{
+	width: 35px;
+	height: auto;
+	background-color: #a3a3a3;
+	border-radius: 50%;
+	margin-right: 10px;
+	object-position: 2px;
+}
+/*=====================FOOTER STYLES START======================*/
+.footer {
+	background: rgb(81, 81, 81);
+  }
+  .footer-nav {
+    color: white;
+	padding: 115px 85px 35px 85px;
+  }
+  .nav-link>li:hover{
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+  }
+ .nav-link{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px;
+ }
+  .hr {
+    border: none;
+	border-top: 1px solid rgb(255, 59, 92);
+	margin-bottom: 55px;
+  }
+  .logo2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(255, 59, 92);
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+    margin: 0 40px;
+  }
+  .nav-link > li:nth-child(n + 2) {
+	margin-left: 40px;
+  }
+  .nav-link a:hover {
+	text-decoration: underline;
+  }
+  .social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 70px;
+  }
+  .icon {
+	border-radius: 50%;
+  }
+  .icon > img {
+	width: 50px;
+	height: auto;
+  }
+  .icon:hover {
+	box-shadow: 0px 0px 8px 8px rgb(255, 59, 92);
+  }
+  .copyright {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.4;
+  }
+  .copyright-date {
+	margin-right: 10px;
+  }
+  .cop:hover {
+  text-shadow: 1px 1px 2px black, 0 0 1em red;
+	text-decoration: underline;
+  }
+  /*=====================FOOTER STYLES END======================*/
